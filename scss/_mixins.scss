@@ -1,0 +1,39 @@
+@use 'variaveis';
+
+@mixin botao($cor-fundo: variaveis.$cor-botao, $cor-texto: variaveis.$cor-secundaria){
+    display: inline-block;
+    padding: variaveis.$espacamento variaveis.$espacamento * 2;
+    background: $cor-fundo;
+    color: $cor-texto;
+    text-decoration: none;
+    border-radius: variaveis.$border-padrao;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background: variaveis.$cor-hover;
+    }
+}
+
+@mixin input($altura: 50px) {
+    width: 100%;
+    height: $altura;
+    padding: 1rem;
+    border: variaveis.$border-bottom;
+    border-radius: variaveis.$border-padrao;
+    font-family: variaveis.$fonte-padrao;
+
+    &:focus {
+        outline: none;
+        border-color: variaveis.$cor-botao;
+    }
+}
+
+@mixin title($cor-title: variaveis.$cor-titulos){
+    font-size: variaveis.$tamanho-titulo;
+    color: $cor-title;
+    margin-bottom: variaveis.$gap-padrao;
+    text-align: center;
+    font-weight: 700;
+}

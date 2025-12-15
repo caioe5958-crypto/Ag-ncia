@@ -1,0 +1,39 @@
+@use 'variaveis';
+@use 'mixins';
+
+.depoimentos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: variaveis.$padding-padrao;
+    text-align: center;
+    border-bottom: variaveis.$border-bottom;
+
+    &__title{
+        @include mixins.title();
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: variaveis.$gap-padrao * 2;
+        margin-top: variaveis.$margin-padrao;
+
+        &-cliente{
+            background: variaveis.$cor-secundaria;
+            padding: variaveis.$padding-padrao / 2;
+            border-radius: variaveis.$border-padrao;
+
+            &-imagem{
+                width: 80px;
+                height: 80px;
+                border-radius: variaveis.$border-padrao * 10;
+                object-fit: cover;
+                margin-bottom: variaveis.$gap-padrao;
+            }
+            &-text{
+                font-style: variaveis.$font-style-text;
+                color: variaveis.$cor-texto;
+                padding: variaveis.$padding-padrao / 4 ;
+            }
+        }
+    }
+}

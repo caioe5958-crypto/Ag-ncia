@@ -1,0 +1,17 @@
+@use 'variaveis';
+@use 'mixins';
+
+.botao {
+    @include mixins.botao;
+}
+
+.input {
+    @include mixins.input;
+}
+
+.card {
+    background: variaveis.$cor-secundaria;
+    padding: variaveis.$padding-padrao / 2;
+    border-radius: variaveis.$border-padrao;
+    text-align: center;
+}

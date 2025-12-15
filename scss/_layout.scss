@@ -1,0 +1,12 @@
+@use 'variaveis';
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 variaveis.$espacamento;
+}
+
+.grid {
+    display: grid;
+    gap: variaveis.$gap-padrao * 2;
+}

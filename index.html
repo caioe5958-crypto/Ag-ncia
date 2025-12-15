@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência Criativa Web</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <header> 
-        <div class="header">
+    <header class="header"> 
             <div class="header__container">
-                <img src="logo.png" alt="Agência Digitalis" class="header__logo" width="50" height="50">
-                <h1 class="secao__title">Agência Criativa Digitalis</h1>
+                <div class="header__logo">
+                <img src="logo.png" alt="Agência Digitalis" width="50" height="50">
+                <h1 class="header__title">Agência Criativa Digitalis</h1>
             </div>
 
-            <nav class="menu">
-            <ul class="menu__list">
-            <li class="menu__item menu__item--active"><a href="#home" class="menu__link menu__link--active">Home</a></li>
-            <li class="menu__item"><a href="#sobre" class="menu__link">Sobre</a></li>
-            <li class="menu__item"><a href="#servicos" class="menu__link">Serviços</a></li>
-            <li class="menu__item"><a href="#contato" class="menu__link">Contato</a></li>
-            </ul>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-list-item header__menu-list-item--active"><a href="#home" class="header__menu-list-item-link header__menu-list-item-link--active">Home</a></li>
+                    <li class="header__menu-list-item"><a href="#sobre" class="header__menu-list-item-link">Sobre</a></li>
+                    <li class="header__menu-list-item"><a href="#servicos" class="header__menu-list-item-link">Serviços</a></li>
+                    <li class="header__menu-list-item"><a href="#contato" class="header__menu-list-item-link">Contato</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -31,9 +31,9 @@
     <section id="home" class="home">
     <div class="banner">
         <div class="banner__content">
-            <h1 class="secao__title">Transformamos suas ideias em experiências digitais incríveis</h1>
-            <p class="secao__text">Soluções criativas em design e desenvolvimento para alavancar seu negócio</p>
-            <a href="#contato" class="banner__button">Solicitar Orçamento</a>
+            <h1 class="banner__content-title">Transformamos suas ideias em experiências digitais incríveis</h1>
+            <p class="banner__content-text">Soluções criativas em design e desenvolvimento para alavancar seu negócio</p>
+            <a href="#contato" class="banner__content-button">Solicitar Orçamento</a>
         </div>
 
         <div class="banner__image-container">
@@ -43,84 +43,84 @@
     </section>
 
     <section id="sobre" class="sobre">
-        <div class="info">
-            <h2 class="secao__title">Sobre Nós</h2>
-            <p class="secao__text">Na Agência Digitalis, combinamos criatividade e tecnologia para criar soluções digitais incríveis.</p>
+        <div class="sobre__info">
+            <h2 class="sobre__info-title">Sobre Nós</h2>
+            <p class="sobre__info-text">Na Agência Digitalis, combinamos criatividade e tecnologia para criar soluções digitais incríveis.</p>
         
-            <h3 class="info__subtitle">Nossos Valores</h3>
-                <ul class="info__list">
-                    <li class="info__item">Inovação Constante</li>
-                    <li class="info__item">Parceria Transparente</li>
-                    <li class="info__item">Soluções Personalizadas</li>
+            <h3 class="sobre__info-subtitle">Nossos Valores</h3>
+                <ul class="sobre__info-list">
+                    <li class="sobre__info-list-item">Inovação Constante</li>
+                    <li class="sobre__info-list-item">Parceria Transparente</li>
+                    <li class="sobre__info-list-item">Soluções Personalizadas</li>
                  </ul>
         </div>
     </section>
 
     <section id="servicos" class="servicos">
-        <h2 class="secao__title">Nossos serviços</h2>
+        <h2 class="servicos__title">Nossos serviços</h2>
 
         <div class="servicos__grid">
 
-            <div class="servicos__item">
-                <h3 class="servicos__subtitle">Design Gráfico</h3>
-                <p class="secao__text">Criamos identidades visuais impactantes</p>
+            <div class="servicos__grid-item">
+                <h3 class="servicos__grid-item-subtitle">Design Gráfico</h3>
+                <p class="servicos__grid-item-text">Criamos identidades visuais impactantes</p>
             </div>
 
-            <div class="servicos__item">
-                <h3 class="servicos__subtitle">Desenvolvimento Web</h3>
-                <p class="secao__text">Sites modernos e responsivos</p>
+            <div class="servicos__grid-item">
+                <h3 class="servicos__grid-item-subtitle">Desenvolvimento Web</h3>
+                <p class="servicos__grid-item-text">Sites modernos e responsivos</p>
             </div>
 
-            <div class="servicos__item">
-                <h3 class="servicos__subtitle">Branding</h3>
-                <p class="secao__text">Construímos marcas fortes e memoráveis</p>
+            <div class="servicos__grid-item">
+                <h3 class="servicos__grid-item-subtitle">Branding</h3>
+                <p class="servicos__grid-item-text">Construímos marcas fortes e memoráveis</p>
             </div>
             
-            <div class="servicos__item">
-                <h3 class="servicos__subtitle">Marketing Digital</h3>
-                <p class="secao__text">Estratégias para alavancar seu negócio</p>
+            <div class="servicos__grid-item">
+                <h3 class="servicos__grid-item-subtitle">Marketing Digital</h3>
+                <p class="servicos__grid-item-text">Estratégias para alavancar seu negócio</p>
             </div>
 
-            <div class="servicos__item">
-            <h3 class="servicos__subtitle">UI/UX Design</h3>
-            <p class="secao__text">Experiências intuitivas e agradáveis</p>
+            <div class="servicos__grid-item">
+            <h3 class="servicos__grid-item-subtitle">UI/UX Design</h3>
+            <p class="servicos__grid-item-text">Experiências intuitivas e agradáveis</p>
             </div>
 
-            <div class="servicos__item">
-            <h3 class="servicos__subtitle">E-commerce</h3>
-            <p class="secao__text">Lojas virtuais completas e seguras</p>
+            <div class="servicos__grid-item">
+            <h3 class="servicos__grid-item-subtitle">E-commerce</h3>
+            <p class="servicos__grid-item-text">Lojas virtuais completas e seguras</p>
              </div>
 
     </section>
 
     <section id="depoimentos" class="depoimentos">
-        <h2 class="secao__title">Depoimentos de nossos clientes</h2>
+        <h2 class="depoimentos__title">Depoimentos de nossos clientes</h2>
     
         <div class="depoimentos__container">
-            <div class="depoimentos__cliente">
-                <img src="cliente1.jpeg" alt="João Silva" class="depoimentos__imagem">
-                <p class="secao__text">João Silva: "Transformou nosso site!"</p>
+            <div class="depoimentos__container-cliente">
+                <img src="cliente1.jpeg" alt="João Silva" class="depoimentos__container-cliente-imagem">
+                <p class="depoimentos__container-cliente-text">João Silva: "Transformou nosso site!"</p>
             </div>
     
-            <div class="depoimentos__cliente">
-                <img src="cliente2.jpeg" alt="Maria Santos" class="depoimentos__imagem">
-                <p class="secao__text">Maria Santos: "Profissionalismo excepcional!"</p>
+            <div class="depoimentos__container-cliente">
+                <img src="cliente2.jpeg" alt="Maria Santos" class="depoimentos__container-cliente-imagem">
+                <p class="depoimentos__container-cliente-text">Maria Santos: "Profissionalismo excepcional!"</p>
             </div>
     
-            <div class="depoimentos__cliente">
-                <img src="cliente3.jpeg" alt="Gabriela Silveira" class="depoimentos__imagem">
-                <p class="secao__text">Gabriela Silveira: "Recomendo para todos!"</p>
+            <div class="depoimentos__container-cliente">
+                <img src="cliente3.jpeg" alt="Gabriela Silveira" class="depoimentos__container-cliente-imagem">
+                <p class="depoimentos__container-cliente-text">Gabriela Silveira: "Recomendo para todos!"</p>
             </div>
         </div>
     </section>
 
     <section id="contato" class="contato">
-    <h2 class="secao__title">Entre em contato conosco</h2>
+    <h2 class="contato__title">Entre em contato conosco</h2>
     <form class="contato__form">
-        <input type="text" class="contato__input" placeholder="Seu nome" required>
-        <input type="email" class="contato__input" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua mensagem" class="contato__textarea"></textarea>
-        <button type="button" class="contato__button">Enviar Mensagem</button>
+        <input type="text" class="contato__form-input" placeholder="Seu nome" required>
+        <input type="email" class="contato__form-input" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" class="contato__form-textarea"></textarea>
+        <button type="button" class="contato__form-button">Enviar Mensagem</button>
     </form>
     </section>
 

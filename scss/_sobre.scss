@@ -1,0 +1,43 @@
+@use 'variaveis';
+@use 'mixins';
+
+.sobre{
+    max-width: 100%;
+    margin: variaveis.$gap-padrao auto;
+    padding: variaveis.$padding-padrao;
+    text-align: center;
+    border-bottom: variaveis.$border-bottom;
+
+    &__info{
+
+        &-title{
+            @include mixins.title();
+            margin-bottom: 2rem;
+        }
+
+        &-text{
+            margin-bottom: 2rem;
+            font-size: variaveis.$tamanho-titulo / 2.5;
+            line-height: variaveis.$height-padrao;
+        }
+
+        &-subtitle{
+            margin: 2rem 0 1rem 0;
+            color: variaveis.$cor-titulos;
+        }
+
+        &-list{
+            padding-left: 0;
+            list-style-position: inside;
+            display: inline-block;
+            margin: 1rem auto;
+
+            &-item{
+                margin-bottom: 0.5rem;
+                font-size: variaveis.$tamanho-titulo / 2.5;
+                line-height: variaveis.$height-padrao;
+            }
+        }
+    }
+
+}

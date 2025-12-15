@@ -1,0 +1,81 @@
+@use 'variaveis';
+@use 'mixins';
+
+.header {
+    background: variaveis.$cor-secundaria;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    border-bottom: variaveis.$border-bottom;
+
+    &__logo {
+    display: flex;
+    align-items: center;
+    gap: variaveis.$gap-padrao;
+    
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+&__title {
+    @include mixins.title();
+}
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: variaveis.$gap-padrao * 2 0;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    &__menu{
+
+        &-list{
+        display: flex;
+        list-style: none;
+        gap: variaveis.$gap-padrao;
+        margin-top: 1rem;
+
+            &-item{
+                width: 100%;
+
+                &-link{
+                    text-decoration: none;
+                    color: variaveis.$cor-texto;
+                    padding: 1rem;
+
+                    &--active{
+                        color: variaveis.$cor-secundaria;
+                        
+
+                    }
+                }
+                &--active{
+                    background-color: variaveis.$cor-texto;
+                    border-radius: variaveis.$border-padrao * 2;
+                    
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+    &__container {
+        padding: variaveis.$gap-padrao;
+    }
+    
+    &__title {
+        font-size: 1.2rem;
+    }
+    
+    &__menu {
+        &-list {
+            display: block;
+            gap: variaveis.$gap-padrao;
+        }
+    }
+}
+}

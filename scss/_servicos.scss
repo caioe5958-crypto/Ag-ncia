@@ -1,0 +1,34 @@
+@use 'variaveis';
+@use 'mixins';
+
+.servicos{
+    border-bottom: variaveis.$border-bottom;
+
+    &__title{
+        @include mixins.title();
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: variaveis.$gap-padrao * 2;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: variaveis.$padding-padrao;
+
+        &-item{
+            background: variaveis.$cor-secundaria;
+            padding: variaveis.$padding-padrao / 2;
+            border-radius: variaveis.$border-padrao;
+            text-align: center;
+                &-subtitle{
+                    color: variaveis.$cor-titulos;
+                    margin-bottom: variaveis.$gap-padrao;
+            }
+                &-text{
+                    font-style: variaveis.$font-style-text;
+                    color: variaveis.$cor-texto;
+                    padding: variaveis.$padding-padrao / 4 ;
+            }
+        }
+    }
+}
